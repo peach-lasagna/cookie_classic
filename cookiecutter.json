@@ -1,0 +1,11 @@
+{
+  "project_name": "",
+  "description": "",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "version": "0.1.0",
+  "github_name": "wretwe",
+  "email": "kir.kud@inbox.ru",
+  "hub": "https://github.com/{{ cookiecutter.github_name }}/{{ cookiecutter.project_name }}",
+  "docs": "https://github.com/{{ cookiecutter.github_name }}/{{ cookiecutter.project_name }}/docs",
+  "py_ver": "3.8"
+}
