@@ -40,3 +40,13 @@ classic cookie
 ├─── CONTRIBUTING.md
 └─── README.md 
 ```
+
+## Download
+install cookiecutter:
+```sh
+$ pip install cookiecutter
+```
+install this project:
+```sh
+$ cookiecutter https://github.com/wretwe/cookie_classic.git
+```
