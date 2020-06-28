@@ -6,7 +6,7 @@
 
 ## Установка
 
-Python 3.8+
+Python {{ cookiecutter.py_ver }}
 
 ```bash
 $ git clone https://github.com/{{ cookiecutter.github_name }}/{{ cookiecutter.project_name }}.git
