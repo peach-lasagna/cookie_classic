@@ -27,17 +27,17 @@ repos:
     hooks:
       - id: isort
         name: isort
+        description: Run isort on python files/directories
         entry: isort
         language: python
         "types": [python]
         args: []
-        require_serial: false
         additional_dependencies: []
 
       - id: mypy
         name: mypy
-        description: Run mypy on python files/directories.
-        entry: mypy
+        description: Type checking
+        entry: mypy . 
         language: python
         types: [python]
         additional_dependencies: []
@@ -45,10 +45,9 @@ repos:
       - id: black
         name: black
         description: Run black formatter.
-        entry: poetry run black --config pyproject.toml
-        exclude: ^{{ cookiecutter.project_name }}/
+        entry: black -t py38 -l 90 .
         types: [python]
-        language: system
+        language: python
 
       - id: pylama
         name: pylama
@@ -58,24 +57,22 @@ repos:
         types: [python]
         additional_dependencies: []
 
-      - id: python-bandit-vulnerability-check
+      - id: bandit
         name: bandit
         description: Python code vulnerabilities checker
         language: python
         types: [python]
-        entry: bandit_analyzer
-        args: [-lll, --recursive, .]
-        files: ""
+        entry: bandit -r .
 
       - id: pydocstyle
         name: PEP257
-        entry: pydocstyle
+        entry: pydocstyle --ignore=D100
         language: python
         files: \.py$
 
       - id: vulture
         name: vulture
         description: Find dead code
-        entry: vulture
+        entry: vulture .
         types: [python]
         language: python
