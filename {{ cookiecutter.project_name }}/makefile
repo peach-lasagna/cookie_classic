@@ -4,7 +4,7 @@ BIN = .venv/bin/
 CODE = {{ cookiecutter.project_slug }}
 
 init:
-	poetry config virtualenvs.in-project false --local
+	poetry config virtualenvs.in-project true --local
 	poetry install
 
 .PHONY: clean_build
