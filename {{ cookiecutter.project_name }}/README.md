@@ -16,7 +16,10 @@ make venv in project:
 ```bash
 $ poetry config virtualenvs.in-project true --local
 ```
-
+Update dependies:
+```bash
+$ poetry update toml
+```
 Install dependies:
 ```bash
 $ poetry install
