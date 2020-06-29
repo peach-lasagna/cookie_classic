@@ -9,7 +9,7 @@
 Python {{ cookiecutter.py_ver }}
 
 ```bash
-$ git clone https://github.com/{{ cookiecutter.github_name }}/{{ cookiecutter.project_name }}.git
+$ git clone {{ cookiecutter.hub }}.git
 $ cd {{ cookiecutter.project_name }}
 ```
 make venv in project:
