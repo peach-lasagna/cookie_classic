@@ -22,6 +22,7 @@ classifiers = []
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.py_ver }}"
+python-dotenv = "^0.13.0"
 
 [tool.poetry.dev-dependencies]
 isort = "^4.3.21"
@@ -32,6 +33,7 @@ pylama = "^7.7.1"
 bandit = "^1.6.2"
 pydocstyle = "^5.0.2"
 black = "^19.10b0"
+autopep8 = "^1.5.3"
 
 [tool.isort]
 known_typing = "typing,types,typing_extensions,mypy,mypy_extensions"
