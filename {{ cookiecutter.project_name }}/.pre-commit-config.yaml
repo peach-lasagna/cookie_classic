@@ -76,3 +76,10 @@ repos:
         entry: vulture .
         types: [python]
         language: python
+        
+      - id: autopep8
+        name: autopep8
+        description: autopep8 formatter
+        entry: autopep8 --in-place -r  --max-line-length=90 .
+        types: [python]
+        language: python
