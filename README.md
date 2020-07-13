@@ -50,3 +50,9 @@ install this project:
 ```sh
 $ cookiecutter https://github.com/wretwe/cookie_classic.git
 ```
+
+or:
+
+```sh
+$ cookiecutter cookie_classic
+```
