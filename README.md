@@ -51,7 +51,7 @@ install this project:
 $ cookiecutter https://github.com/wretwe/cookie_classic.git
 ```
 
-or:
+or
 
 ```sh
 $ cookiecutter cookie_classic
