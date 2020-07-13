@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "github_username": "wretwe",
   "email": "kir.kud@inbox.ru",
-  "hub": "https://github.com/{{ cookiecutter.github_name }}/{{ cookiecutter.project_name }}",
-  "docs": "https://github.com/{{ cookiecutter.github_name }}/{{ cookiecutter.project_name }}/docs",
+  "hub": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}",
+  "docs": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/docs",
   "py_ver": "3.8"
 }
