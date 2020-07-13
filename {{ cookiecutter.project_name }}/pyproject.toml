@@ -8,7 +8,7 @@ build-backend = "poetry.masonry.api"
 name = "{{ cookiecutter.project_name }}"
 description = "{{ cookiecutter.description }}"
 version = "{{ cookiecutter.version }}"
-authors = ["{{ cookiecutter.github_name }} <{{ cookiecutter.email }}>"]
+authors = ["{{ cookiecutter.github_username }} <{{ cookiecutter.email }}>"]
 readme = "README.md"
 license = "Apache Software License 2.0"
 
