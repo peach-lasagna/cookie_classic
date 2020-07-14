@@ -7,5 +7,5 @@
   "email": "kir.kud@inbox.ru",
   "hub": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}",
   "docs": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/docs",
-  "py_ver": "3.8"
+  "py_ver": "3.8.4"
 }
