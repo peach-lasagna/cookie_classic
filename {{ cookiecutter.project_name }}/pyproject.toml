@@ -22,7 +22,7 @@ classifiers = []
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.py_ver }}"
-python-dotenv = "^0.13.0"
+python-dotenv = "^0.14.0"
 
 [tool.poetry.dev-dependencies]
 isort = "^4.3.21"
