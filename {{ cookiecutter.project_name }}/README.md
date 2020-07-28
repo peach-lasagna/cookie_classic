@@ -18,9 +18,14 @@ $ poetry config virtualenvs.in-project true --local
 ```
 Update dependies:
 ```bash
-$ poetry update toml
+$ poetry lock
 ```
 Install dependies:
 ```bash
 $ poetry install
+```
+
+Run module:
+```bash
+$ poetry run python {{ cookiecutter.project_slug }}
 ```
