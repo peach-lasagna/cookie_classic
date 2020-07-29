@@ -55,4 +55,4 @@ target-version = ["py{{ cookiecutter.py_ver.replace('.', '') }}"]
 exclude = "({{ cookiecutter.project_name }}/|__pycache__|.eggs|.git|.hg|.mypy_cache|.nox|.tox|.venv|.svn|_build|buck-out|build|dist)"
 
 [tool.poetry.scripts]
-cli = "{{ cookiecutter.project_slug }}.__main__:main"
+cli = "app.__main__:main"
