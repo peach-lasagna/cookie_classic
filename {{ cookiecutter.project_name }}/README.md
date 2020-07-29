@@ -21,7 +21,14 @@ Install and update dependies:
 $ poetry update
 ```
 
-Run app:
+## Run
+With activate venv:
 ```bash
-$ poetry run python app
+$ source .venv/Scripts/activate
+(.venv) $ py app
 ```
+With poetry:
+```bash
+$ poetry run py app
+```
+
