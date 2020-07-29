@@ -16,13 +16,9 @@ make venv in project:
 ```bash
 $ poetry config virtualenvs.in-project true --local
 ```
-Update dependies:
+Install and update dependies:
 ```bash
-$ poetry lock
-```
-Install dependies:
-```bash
-$ poetry install
+$ poetry update
 ```
 
 Run module:
