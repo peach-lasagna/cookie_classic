@@ -21,7 +21,7 @@ Install and update dependies:
 $ poetry update
 ```
 
-Run module:
+Run app:
 ```bash
-$ poetry run python {{ cookiecutter.project_slug }}
+$ poetry run python app
 ```
