@@ -48,7 +48,7 @@ $ pip install cookiecutter
 ```
 install this project:
 ```sh
-$ cookiecutter https://github.com/wretwe/cookie_classic.git
+$ cookiecutter https://github.com/peach-lasagna/cookie_classic.git
 ```
 
 or
