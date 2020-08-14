@@ -94,6 +94,6 @@ repos:
         name: Convert pyproject.toml to requirements.txt
         description: Generate requirements.txt pyproject.toml for backwards compatibility.
         language: system
-        entry: poetry export -f requirements.txt -o requirements.txt
+        entry: poetry export -f requirements.txt > requirements.txt --without-hashes
         files: "^pyproject.toml$"
         pass_filenames: false
