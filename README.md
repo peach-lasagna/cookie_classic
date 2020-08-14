@@ -34,7 +34,6 @@ classic cookie
 │
 ├─── .gitignore
 ├─── .editorconfig
-├─── makefile
 │
 ├─── LICENSE
 ├─── CONTRIBUTING.md
