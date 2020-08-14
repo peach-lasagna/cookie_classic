@@ -82,3 +82,18 @@ repos:
         language: python
         types: [python]
         entry: bandit -r .
+
+      - id: export
+        name: export
+        description: Poetry export to requirements.txt
+        language: python
+        types: [python]
+        entry: bandit -r .
+        
+      - id: export-requirements
+        name: Convert pyproject.toml to requirements.txt
+        description: Generate requirements.txt pyproject.toml for backwards compatibility.
+        language: system
+        entry: poetry export -f requirements.txt -o requirements.txt
+        files: "^pyproject.toml$"
+        pass_filenames: false
