@@ -34,6 +34,7 @@ bandit = "^1.6.2"
 pydocstyle = "^5.0.2"
 black = "^19.10b0"
 autopep8 = "^1.5.3"
+pytest = "^6.0.1"
 
 [tool.isort]
 known_typing = "typing,types,typing_extensions,mypy,mypy_extensions"
