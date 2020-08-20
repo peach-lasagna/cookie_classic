@@ -48,7 +48,7 @@ use_parentheses = true
 line_length = 90
 
 [tool.pydocstyle]
-ignore = "D100"
+ignore = "D100,D213,D407,D203,D406"
 
 [tool.black]
 line-length = 90
