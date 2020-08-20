@@ -51,7 +51,7 @@ repos:
       - id: black
         name: black
         description: Run black formatter.
-        entry: black -t py38 -l 90 .
+        entry: black -t py{{ cookiecutter.py_ver.replace('.', '') }} -l 90 .
         types: [python]
         language: python
 
