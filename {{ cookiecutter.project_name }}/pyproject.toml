@@ -47,9 +47,6 @@ force_grid_wrap = 0
 use_parentheses = true
 line_length = 90
 
-[tool.pydocstyle]
-ignore = "D100,D213,D407,D203,D406"
-
 [tool.black]
 line-length = 90
 target-version = ["py{{ cookiecutter.py_ver.replace('.', '') }}"]
