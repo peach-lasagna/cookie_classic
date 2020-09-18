@@ -32,7 +32,6 @@ mypy = "^0.782"
 pylama = "^7.7.1"
 bandit = "^1.6.2"
 pydocstyle = "^5.0.2"
-black = "^19.10b0"
 autopep8 = "^1.5.3"
 pytest = "^6.0.1"
 
@@ -46,11 +45,6 @@ multi_line_output = 5
 force_grid_wrap = 0
 use_parentheses = true
 line_length = 90
-
-[tool.black]
-line-length = 90
-target-version = ["py{{ cookiecutter.py_ver.replace('.', '') }}"]
-exclude = "({{ cookiecutter.project_name }}/|__pycache__|.eggs|.git|.hg|.mypy_cache|.nox|.tox|.venv|.svn|_build|buck-out|build|dist)"
 
 [tool.poetry.scripts]
 cli = "app.__main__:main"
