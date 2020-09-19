@@ -13,8 +13,6 @@ classic cookie
 │   ├─── PULL_REQUEST_TEMPLATE.md
 │   └─── release-drafter.yml
 │   │
-├───config
-│   └─── __init__.py
 │
 ├───{{ cookiecutter.project_slug }}
 │   ├─── __init__.py
