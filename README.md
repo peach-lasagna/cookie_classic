@@ -3,39 +3,36 @@ classic cookie
 ## structure
 ```properties
 {{ cookiecutter.project_name }}
-├───.github
-│   ├───ISSUE_TEMPLATE
-│   │   ├─── bug_report.md
-│   │   ├─── config.yml
-│   │   ├─── feature_request.md
-│   │   └─── question.md
-│   ├─── .stale.yml
-│   ├─── PULL_REQUEST_TEMPLATE.md
-│   └─── release-drafter.yml
-│   │
-│
-├───{{ cookiecutter.project_slug }}
-│   ├─── __init__.py
-│   ├─── __main__.py
-│   └─── py.typed
-│
-├───docs
-│   ├───examples
-│   │   └─── example.py
-│   └─── doc.md
-│
-├───tests
-│   └─── test_{{ cookiecutter.project_slug }}.py
-│
-├─── .pre-commit-config.yaml
-├─── pyproject.toml
-│
-├─── .gitignore
-├─── .editorconfig
-│
-├─── LICENSE
-├─── CONTRIBUTING.md
-└─── README.md 
+  |-.editorconfig
+  |-.env
+  |-.env.example
+  |-.github
+  |  |-.stale.yml
+  |  |-ISSUE_TEMPLATE
+  |  |  |-bug_report.md
+  |  |  |-config.yml
+  |  |  |-feature_request.md
+  |  |  |-question.md
+  |  |-PULL_REQUEST_TEMPLATE.md
+  |  |-release-drafter.yml
+  |  |-workflows
+  |  |  |-main.yaml
+  |-.gitignore
+  |-.pre-commit-config.yaml
+  |-app
+  |  |-__main__.py
+  |  |-{{ cookiecutter.project_slug }}
+  |  |  |-__init__.py
+  |-CONTRIBUTING.md
+  |-docs
+  |  |-doc.md
+  |  |-examples
+  |  |  |-example.py
+  |-LICENSE
+  |-pyproject.toml
+  |-README.md
+  |-tests
+  |  |-test_{{ cookiecutter.project_slug }}.py
 ```
 
 ## Download
