@@ -52,10 +52,6 @@ jobs:
         run: |
           poetry run flake8 app tests
           
-      - name: Run pydocstyle
-        run: |
-          poetry run pydocstyle app
-          
       - name: Run Mypy
         run: |
           poetry run mypy app
