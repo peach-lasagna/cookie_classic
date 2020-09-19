@@ -17,6 +17,7 @@ jobs:
           - macos-latest
           - windows-latest
         python-version:
+          - 3.7
           - 3.8
 
     steps:
