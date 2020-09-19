@@ -31,7 +31,7 @@ flake8 = "^3.8.3"
 mypy = "^0.782"
 pylama = "^7.7.1"
 bandit = "^1.6.2"
-pydocstyle = "^5.0.2"
+flake8-docstrings = "^1.5.0"
 autopep8 = "^1.5.3"
 pytest = "^6.0.1"
 
