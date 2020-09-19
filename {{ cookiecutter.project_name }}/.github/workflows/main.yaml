@@ -17,7 +17,7 @@ jobs:
           - macos-latest
           - windows-latest
         python-version:
-          - {{ cookiecutter.py_ver }}
+          - 3.8
 
     steps:
       - uses: actions/checkout@master
