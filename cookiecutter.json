@@ -9,6 +9,6 @@
   "docs": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/docs",
   "py_ver": "3.8",
   "_copy_without_render": [
-    "*{{ cookiecutter.project_name }}/.github/workflows"
+    "{{ cookiecutter.project_name }}/.github/workflows/main.yaml"
   ]
 }
