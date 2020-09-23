@@ -49,7 +49,7 @@ jobs:
 
       - name: Run flake8
         run: |
-          poetry run flake8 app tests
+          poetry run flake8 app tests --count --exit-zero --statistics --show-source
           
       - name: Run Mypy
         run: |
