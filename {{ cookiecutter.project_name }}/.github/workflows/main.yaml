@@ -34,31 +34,23 @@ jobs:
       
       - name: Setup flake8 annotations
         uses: rbialon/flake8-annotations@v1
-        
-      - name: Run Isort
-        run: |
-          poetry run isort app tests
-      
-      - name: Run autopep8
-        run: |
-          poetry run autopep8 --in-place -r --max-line-length=90 app
      
      - name: Run vulture
-        run: |
+       run: |
           poetry run vulture app
 
-      - name: Run flake8
-        run: |
+     - name: Run flake8
+       run: |
           poetry run flake8 app tests --count --exit-zero --statistics --show-source
           
-      - name: Run Mypy
-        run: |
+     - name: Run Mypy
+       run: |
           poetry run mypy app
       
-      - name: Run bandit
-        run: |
+     - name: Run bandit
+       run: |
           poetry run bandit -r  app
 
-      - name: Run tests
-        run: |
+     - name: Run tests
+       run: |
           poetry run pytest
