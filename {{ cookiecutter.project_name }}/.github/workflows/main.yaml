@@ -31,26 +31,26 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install poetry
           poetry install
-      
+
       - name: Setup flake8 annotations
         uses: rbialon/flake8-annotations@v1
-     
-     - name: Run vulture
-       run: |
-          poetry run vulture app
 
-     - name: Run flake8
-       run: |
-          poetry run flake8 app tests --count --exit-zero --statistics --show-source
+      - name: Run vulture
+        run: |
+          poetry run vulture app
           
-     - name: Run Mypy
-       run: |
+      - name: Run flake8
+        run: |
+          poetry run flake8 app tests --count --exit-zero --statistics --show-source
+
+      - name: Run Mypy
+        run: |
           poetry run mypy app
-      
-     - name: Run bandit
-       run: |
+
+      - name: Run bandit
+        run: |
           poetry run bandit -r  app
 
-     - name: Run tests
-       run: |
+      - name: Run tests
+        run: |
           poetry run pytest
